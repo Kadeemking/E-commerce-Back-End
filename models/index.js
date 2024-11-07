@@ -5,15 +5,31 @@ const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 const { ForeignKeyConstraintError } = require('../config/connection');
 
+// Categories have many Products
+Category.hasMany(Product,{
+  foreignKey: "category",
+  onDelete: "CASCADE"
+})
+
 // Products belongsTo Category
 Product.belongsTo(Category,{
-  foreignKey: "category_id"
+  foreignKey: "category_id",
+  as: 'productCategory'
 })
-// Categories have many Products
 
 // Products belongToMany Tags (through ProductTag)
+Product.belongsToMany(Tag,{
+  through:{
+    model: ProductTag
+  }
+})
 
 // Tags belongToMany Products (through ProductTag)
+Tag.belongsToMany(Product,{
+  through:{
+    model: ProductTag
+  }
+})
 
 module.exports = {
   Product,
