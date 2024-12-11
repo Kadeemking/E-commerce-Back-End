@@ -26,13 +26,13 @@ You can test all the routes in insomnia after the server is running.
 <a href="https://drive.google.com/file/d/1I3_wf3XiYUg5sWz_hA5L8SFRnzFURYdo/view">Walkthrough Tutorial</a> 
 
 - Get All Categories
-![Photo of application usage](./photos/CategoryScreenshot.png)
+![Photo of application usage](./photos/CategoryScreenshot.jpeg)
 
 - Get All Products
-![Photo of application usage](./photos/productScreenshot.png)
+![Photo of application usage](./photos/productScreenshot.jpeg)
 
 - Get All Tags
-![Photo of application usage](./photos/tagScreenshot.png)
+![Photo of application usage](./photos/tagScreenshot.jpeg)
 
 ## Credits
 
